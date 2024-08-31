@@ -41,6 +41,8 @@ COPY ./videos/4k2.mov /tmp/hls/4k2.mov
 # Copy the start script to the container
 COPY start.sh /start.sh
 
+COPY index.html /opt/index.html
+
 # Make the start script executable
 RUN chmod +x /start.sh
 
